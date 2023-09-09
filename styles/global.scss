@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+#mainNav {
+
+    --nav-h: 50px;
+    // background-color: red;
+    height: var(--nav-h);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+    #hmbgr {
+
+        --h : 35px;
+        // background-color: greenyellow;
+        height: var(--h);
+        aspect-ratio: 1/1;
+        border-radius: 5px;
+        position: relative;
+        margin: calc((var(--nav-h) - var(--h))/2);
+        overflow: hidden;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+
+        &:hover{
+            border-color: rgba(0,0,0,0.2);
+        }
+
+        hr {
+            border-radius: 10px;
+            --w : 25px;
+            margin: 0;
+            position: relative;
+            margin-top: calc((var(--h) - 8px) / 4);
+            width: var(--w);
+            left: calc((var(--h) - 2px -  var(--w)) / 2 );
+            background-color: #333;
+            border: 0;
+            height: 2px;
+        }
+
+        #hmbgr-hr-1 {
+            width: 20px;
+        }
+    }
+
+}
